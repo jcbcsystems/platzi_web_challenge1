@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("../../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+}
+header {
+    width: 100vw;
+    padding: 40px 0 10px 20px;
+}
+header img {
+    width: 40%;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.image {
+    width: 80%;
+    margin: auto;
+}
+.image img {
+    display: block;
+    width: 100%;    
+}
+.content h1{
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.content p{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+}
+.content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: hsl(257, 40%, 49%);
+    -webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+}
+
+footer {
+    width: 35%;
+    margin: 0 auto;
+}
+
+footer .socials-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+footer .socials-icons a {
+    color: white;
+    font-size: 3rem;
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-image: url("../../images/bg-desktop.svg");
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    header {
+        margin: 1% 3%;
+        width: 30%;
+    }
+    
+    section { 
+        width: 85%;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    .image {
+        width: 130%;
+    }
+    .content h1{
+        text-align: left;
+        font-size: 3.5rem;
+        width: 80%;
+    }
+    .content p{
+        text-align: left;
+    }
+    .content button {
+        margin: 50px;
+        width: 30%;
+        height: 40px;
+    }
+    footer {
+        margin-left: 80%; 
+    }
+    footer .socials-icons {
+        width: 40%;
+        margin: 0;      
+    }
+}
